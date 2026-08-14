@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday, Rupesh Sir! 🎂</title>
+
+    <!-- Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ========================================
+     MAGIC BACKGROUND
+======================================== -->
+
+<div class="background-magic">
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+</div>
+
+
+<!-- ========================================
+     MAIN APP
+======================================== -->
+
+<main id="app">
+
+
+    <!-- ====================================
+         SCREEN 1
+    ==================================== -->
+
+    <section class="screen active"
+             id="screen1">
+
+        <div class="screen-content hero-content">
+
+            <div class="small-star">✦</div>
+
+            <p class="eyebrow">
+                HELLO, SIR 👋
+            </p>
+
+            <h1>
+                We Made Something
+                <span>For You.</span>
+            </h1>
+
+            <p class="subtitle">
+
+                Not homework.
+
+                Not an assignment.
+
+                Something a little more special.
+
+            </p>
+
+
+            <button class="main-btn"
+                    id="openBtn">
+
+                <span>OPEN IT</span>
+
+                <span class="btn-arrow">→</span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ====================================
+         SCREEN 2
+    ==================================== -->
+
+    <section class="screen"
+             id="screen2">
+
+        <div class="screen-content warning-content">
+
+            <div class="warning-icon">
+                😭
+            </div>
+
+            <p class="eyebrow">
+                ONE SMALL WARNING
+            </p>
+
+            <h2>
+                Please Don't Judge
+                <span>The Students Who Made This.</span>
+            </h2>
+
+            <p class="subtitle">
+
+                We tried our best.
+
+                Which, considering we're your students...
+
+                might already be worrying.
+
+            </p>
+
+
+            <div class="choice-buttons">
+
+                <button class="choice-btn"
+                        id="tryBtn">
+
+                    I'll Try Not To 😌
+
+                </button>
+
+
+                <button class="choice-btn"
+                        id="promiseBtn">
+
+                    No Promises 😭
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ====================================
+         SCREEN 3
+         MEMORY CARDS
+    ==================================== -->
+
+    <section class="screen"
+             id="screen3">
+
+        <div class="screen-content cards-content">
+
+            <p class="eyebrow">
+                A FEW THINGS WE REMEMBER
+            </p>
+
+            <h2>
+                Some Things
+                <span>Stayed With Us.</span>
+            </h2>
+
+
+            <div class="memory-grid">
+
+
+                <button class="memory-card"
+                        data-title="More Than A Teacher"
+                        data-text="Somewhere between classes, scoldings, advice and random conversations, you became more than just the person teaching us from the front of the classroom.">
+
+                    <span class="card-emoji">📚</span>
+
+                    <span class="card-title">
+                        More Than<br>
+                        A Teacher
+                    </span>
+
+                    <small>CLICK ME</small>
+
+                </button>
+
+
+
+                <button class="memory-card"
+                        data-title="The Little Things"
+                        data-text="Some things may have looked small, but they became memories. The ice creams, the things you did for the class, and the moments that made ordinary school days better.">
+
+                    <span class="card-emoji">🍦</span>
+
+                    <span class="card-title">
+                        The Little<br>
+                        Things
+                    </span>
+
+                    <small>CLICK ME</small>
+
+                </button>
+
+
+
+                <button class="memory-card"
+                        data-title="You Actually Listened"
+                        data-text="When we complained, you listened. And sometimes you actually did something about it. Still one of the reasons you're not just an ordinary class teacher to us.">
+
+                    <span class="card-emoji">🏀</span>
+
+                    <span class="card-title">
+                        You Actually<br>
+                        Listened
+                    </span>
+
+                    <small>CLICK ME</small>
+
+                </button>
+
+
+
+                <button class="memory-card"
+                        data-title="The Everyday Chaos"
+                        data-text="Classes, attendance, scoldings, jokes, random conversations and all the usual chaos. At the time they felt ordinary. Somehow, they became memories.">
+
+                    <span class="card-emoji">😂</span>
+
+                    <span class="card-title">
+                        The Everyday<br>
+                        Chaos
+                    </span>
+
+                    <small>CLICK ME</small>
+
+                </button>
+
+
+            </div>
+
+
+            <button class="next-btn"
+                    id="photosBtn">
+
+                NEXT → SOME MEMORIES 📸
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ====================================
+         CARD POPUP
+    ==================================== -->
+
+    <div class="popup"
+         id="memoryPopup">
+
+        <div class="popup-box">
+
+            <button class="close-popup"
+                    id="closePopup">
+
+                ×
+
+            </button>
+
+            <div id="popupEmoji"
+                 class="popup-emoji">
+
+                📚
+
+            </div>
+
+            <h3 id="popupTitle"></h3>
+
+            <p id="popupText"></p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ====================================
+         SCREEN 4
+         PHOTOS
+    ==================================== -->
+
+    <section class="screen"
+             id="screen4">
+
+        <div class="screen-content photos-content">
+
+            <p class="eyebrow">
+                MEMORY ARCHIVE
+            </p>
+
+            <h2>
+                8 Frames.
+                <span>A Lot More Memories.</span>
+            </h2>
+
+            <p class="photo-note">
+
+                Click any photo.
+
+                Some moments deserve another look.
+
+            </p>
+
+
+            <div class="photo-stack">
+
+                <div class="polaroid p1">
+                    <img src="1.jpg"
+                         alt="Memory 1">
+                    <span>01</span>
+                </div>
+
+                <div class="polaroid p2">
+                    <img src="2.jpg"
+                         alt="Memory 2">
+                    <span>02</span>
+                </div>
+
+                <div class="polaroid p3">
+                    <img src="3.jpg"
+                         alt="Memory 3">
+                    <span>03</span>
+                </div>
+
+                <div class="polaroid p4">
+                    <img src="4.jpg"
+                         alt="Memory 4">
+                    <span>04</span>
+                </div>
+
+                <div class="polaroid p5">
+                    <img src="5.jpg"
+                         alt="Memory 5">
+                    <span>05</span>
+                </div>
+
+                <div class="polaroid p6">
+                    <img src="6.jpg"
+                         alt="Memory 6">
+                    <span>06</span>
+                </div>
+
+                <div class="polaroid p7">
+                    <img src="7.jpg"
+                         alt="Memory 7">
+                    <span>07</span>
+                </div>
+
+            </div>
+
+
+            <button class="next-btn photo-next"
+                    id="reportBtn">
+
+                ONE MORE THING → 📋
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ====================================
+         PHOTO MODAL
+    ==================================== -->
+
+    <div class="photo-modal"
+         id="photoModal">
+
+        <button class="photo-close"
+                id="photoClose">
+
+            ×
+
+        </button>
+
+        <img id="modalImage"
+             src=""
+             alt="Memory">
+
+    </div>
+
+
+
+    <!-- ====================================
+         SCREEN 5
+         REPORT CARD
+    ==================================== -->
+
+    <section class="screen"
+             id="screen5">
+
+        <div class="screen-content report-content">
+
+            <p class="eyebrow">
+                OFFICIAL EVALUATION 📋
+            </p>
+
+            <h2>
+                Rupesh Sir's
+                <span>Report Card.</span>
+            </h2>
+
+
+            <div class="report-card">
+
+                <div class="report-row">
+
+                    <span>Teaching</span>
+
+                    <strong>A++</strong>
+
+                </div>
+
+
+                <div class="report-row">
+
+                    <span>Listening to Students</span>
+
+                    <strong>A++</strong>
+
+                </div>
+
+
+                <div class="report-row">
+
+                    <span>Patience With Our Class 😭</span>
+
+                    <strong>∞</strong>
+
+                </div>
+
+
+                <div class="report-row">
+
+                    <span>Random Scoldings</span>
+
+                    <strong>LEGENDARY</strong>
+
+                </div>
+
+
+                <div class="report-row">
+
+                    <span>Being Remembered</span>
+
+                    <strong>100/100</strong>
+
+                </div>
+
+
+                <div class="result-box">
+
+                    <span>FINAL RESULT</span>
+
+                    <h3>
+                        PROMOTED TO
+                        <em>LEGEND STATUS 👑</em>
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <button class="next-btn"
+                    id="examBtn">
+
+                WAIT... ONE LAST QUESTION 📚
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ====================================
+         SCREEN 6
+         FINAL MCQ
+    ==================================== -->
+
+    <section class="screen"
+             id="screen6">
+
+        <div class="screen-content exam-content">
+
+            <p class="eyebrow">
+                FINAL EXAM 😭📚
+            </p>
+
+            <h2>
+                One Last
+                <span>Question, Sir.</span>
+            </h2>
+
+
+            <div class="question-box">
+
+                <span class="question-number">
+                    QUESTION 01
+                </span>
+
+                <h3>
+                    What is the one sentence
+                    our class will probably remember forever?
+                </h3>
+
+
+                <div class="options">
+
+                    <button class="option">
+                        <span>A</span>
+                        Open your books.
+                    </button>
+
+
+                    <button class="option">
+                        <span>B</span>
+                        Silence please.
+                    </button>
+
+
+                    <button class="option">
+                        <span>C</span>
+                        Submit your homework.
+                    </button>
+
+
+                    <button class="option correct-option"
+                            id="correctAnswer">
+
+                        <span>D</span>
+
+                        GHAR PE NAHIN PADHTE
+                        KYA AAP LOG?! 😭
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ====================================
+         FINAL SCREEN
+    ==================================== -->
+
+    <section class="screen"
+             id="screen7">
+
+        <div class="screen-content final-content">
+
+            <div class="correct-text">
+
+                CORRECT ANSWER! 💯
+
+            </div>
+
+
+            <div class="classic-dialogue">
+
+                <p>
+                    GHAR PE NAHIN PADHTE
+                </p>
+
+                <h2>
+                    KYA AAP LOG?!
+                </h2>
+
+                <p>
+                    GHAR PE PADHA KIJIYE..
+                </p>
+
+            </div>
+
+
+            <div class="birthday-reveal"
+                 id="birthdayReveal">
+
+                <div class="birthday-stars">
+                    ✦ ✧ ✦ ✧ ✦
+                </div>
+
+                <p>
+                    15 AUGUST
+                </p>
+
+                <h1>
+                    HAPPY BIRTHDAY
+                    <span>RUPESH SIR! 🎂</span>
+                </h1>
+
+                <div class="final-message">
+
+                    Thank you for all the classes,
+                    advice, scoldings, laughs and
+                    the memories in between.
+
+                    <br><br>
+
+                    This is our last year in school,
+                    but some teachers become a part
+                    of the memories we take with us.
+
+                </div>
+
+
+                <div class="made-by">
+
+                    <span>
+                        Made specially for you by
+                    </span>
+
+                    <strong>
+                        Ali ❤️
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
